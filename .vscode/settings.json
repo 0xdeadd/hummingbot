@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}",
+        "CONDA_DEFAULT_ENV": "hummingbot",
+        "CONDA_PREFIX": "/home/nacho/anaconda3/envs/hummingbot",
+        "CONDA_SHLVL": "1"
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shellArgs.linux": ["-i"]
+}
