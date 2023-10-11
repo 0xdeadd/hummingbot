@@ -72,9 +72,9 @@ class StatusCommand:
         paper_trade = "\n  Paper Trading Active: All orders are simulated, and no real orders are placed." if len(active_paper_exchanges) > 0 \
             else ""
         if asyncio.iscoroutinefunction(self.strategy.format_status):
-            st_status = await self.strategy.format_status()
+            st_status = await self.strategy.format_status
         else:
-            st_status = self.strategy.format_status()
+            st_status = self.strategy.format_status
         status = paper_trade + "\n" + st_status
         if self._pmm_script_iterator is not None and live is False:
             self._pmm_script_iterator.request_status()
